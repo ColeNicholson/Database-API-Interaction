@@ -122,7 +122,7 @@ class CoolerController {
 	    const brand = ctx.params.brand;
 	    const model = ctx.params.model;
 	    chpConnection.query ({
-		sql: `DELETE FROM Cooler_ WHERE model = ? AND brand = ?;`,
+		sql: `DELETE FROM cooler_ WHERE model = ? AND brand = ?;`,
 		values: [model, brand]
 	    }, (err, res) => {
 		if(err) {
