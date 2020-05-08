@@ -1,0 +1,13 @@
+const CaseController = new (require('../controllers/CaseController'))();
+const caseRouter = require('koa-router')({
+    prefix: '/case'
+});
+
+
+caseRouter.get('/', CaseController.cases);
+caseRouter.get('/:case', CaseController.case);
+caseRouter.post('/', CaseController.addCase, CaseController.cases);
+caseRouter.put('/:case', CaseController.updateCase, CaseController.case);
+caseRouter.delete('/:case', CaseController.deleteCase, CaseController.cases);
+
+module.exports = caseRouter;

@@ -1,0 +1,29 @@
+{
+  "name": "l5api",
+  "version": "1.0.0",
+  "description": "Lab 5 API",
+  "main": "api.js",
+  "scripts": {
+    "run": "node api.js",
+    "test": "nodemon api.js"
+  },
+  "jshintConfig": {
+    "esversion": 10
+  },
+  "keywords": [
+    "LAB5",
+    "API"
+  ],
+  "author": "JMT",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^8.0.8",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
